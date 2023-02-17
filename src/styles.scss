@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+body, input, button{
+    font-family: 'Schoolbell', cursive;
+}
+
+
+@mixin grid_center {
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+
+
+.root{
+    @include grid_center();
+
+}

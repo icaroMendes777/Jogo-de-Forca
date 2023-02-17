@@ -1,0 +1,131 @@
+@mixin grid_center {
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+main{
+    
+    // display: grid;
+    // grid-template-areas: 'intro intro'
+    //                       'boneco palavra'
+    //                       'errata errata';
+    // gap: 1rem;
+    // //grid-template-columns: 1fr 1fr;
+    // max-width: 99vw;
+    max-width: 700px;
+}
+
+.wrap_boneco_palavra{
+    display: flex;
+    gap:1rem;
+    
+}
+
+.intro{
+    
+}
+
+.boneco{
+   
+    flex:1;
+}
+
+
+.palavra{
+
+    flex:4;
+    gap:10px;   
+}
+
+
+.errata{
+    //grid-area: errata;
+    display: grid;
+    grid-template-areas: 'title title'
+                          'lista paupite';
+    grid-template-columns: 3fr 2fr;
+
+    .title_errata{
+        grid-area: title;
+    }
+    .lista_errata{
+        grid-area: lista;
+    }
+
+    .paupite{
+        grid-area: paupite;
+
+        input{
+            
+            width: 2rem;
+            height: 3rem;
+            font-size: 2rem;
+
+            text-transform: capitalize;
+            padding:0.7rem;
+        }
+    }
+
+
+
+}
+
+
+.palavra{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    gap:5px;
+    .letra{
+        display:grid;
+        justify-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        overflow:hidden;
+        width:1rem;
+      
+        
+
+        text-transform: capitalize;
+    }
+}
+
+
+.lista_errata{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.letra_err{
+    @include grid_center();
+    font-size: 2rem;
+    font-weight: 500;
+
+    text-decoration: underline;
+
+    padding:1rem;
+
+    max-height: 3rem;
+    max-width: 2rem;
+
+    text-transform: capitalize;
+}
+
+
+.restart_btn{
+    font-size: 1.5rem;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+    color: white;
+}
+
+.finish_msg{
+    color: red;
+    font-size: 2rem;
+}
