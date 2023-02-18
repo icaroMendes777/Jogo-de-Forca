@@ -35,7 +35,7 @@ export class AppComponent {
   errorMessage:any = '';
   
 
-  currentLetter:any = '';
+  currentLetter:any = 'a';
 
   completed = false;
 

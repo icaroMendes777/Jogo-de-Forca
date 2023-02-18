@@ -20,6 +20,7 @@ main{
 .wrap_boneco_palavra{
     display: flex;
     gap:1rem;
+    flex-wrap: wrap;
     
 }
 
@@ -75,7 +76,7 @@ main{
 
 .palavra{
     display: inline-flex;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     align-self: flex-end;
     gap:5px;
     .letra{
@@ -87,8 +88,6 @@ main{
         overflow:hidden;
         width:1rem;
       
-        
-
         text-transform: capitalize;
     }
 }
@@ -112,6 +111,10 @@ main{
     max-width: 2rem;
 
     text-transform: capitalize;
+}
+
+.submit{
+    margin:5px;
 }
 
 

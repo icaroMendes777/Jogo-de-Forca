@@ -3,7 +3,7 @@
   <div class="intro">
     <h1>Bem vindo ao jogo de forca!</h1>
 
-    <p>O jogo mais jogado das crianças da quinta série!</p>
+    <p>Quem nunca rabiscou um na carteira da escola...</p>
     
 
   </div>
@@ -70,8 +70,9 @@
     
     
           <div class="paupite">
+            <p>Entre com uma letra:</p>
             <input type="text" [(ngModel)]='currentLetter' maxlength="1"/><br/>
-            <button (click)="submitLetter()">Submit</button>
+            <button (click)="submitLetter()" class="submit">tentar.</button>
             <p>{{errorMessage}}</p>
           </div>
       
