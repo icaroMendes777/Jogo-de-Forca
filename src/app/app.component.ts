@@ -139,14 +139,11 @@ export class AppComponent {
     console.log(this.tentativas);
       if(this.validateLetter()){
         this.tentativas.push(this.currentLetter);
-        
-        
         this.updateGameStatus();
       }
 
     
   }
-
 
   restart():void
   {
